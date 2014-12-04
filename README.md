@@ -26,7 +26,8 @@ sudo chown -R $USER /usr/local
 To test TiCalabash, create a default Alloy application and run:
 `ti calabash --platform=[android,ios]`
 
-Just press enter for now when asked which target to duplicate.
+* On iOS: Just press enter when asked which target to duplicate.
+* On Android: Make sure your emulator (hint: Use [Genymotion](http://www.genymotion.com)) should already be running.
 
 After lots of compiling, you should see:
 ```
@@ -44,7 +45,9 @@ Feature: Home Screen
 3 steps (3 passed)
 ```
 
-The picture/screenshot is found in the `build/iphone` or `build/android` folder and is named `screenshot_X.png`
+The picture/screenshot is named `screenshot_X.png` and can be found in:
+* On iOS: the `build/iphone` folder.
+* On Android: the project root folder.
 
 ## Documentation
 Because TiCalabash is wrapping [Calabash](http://calaba.sh), please use Calabash's documentation to learn how to use Calabash together with [Cucumber](http://cukes.info):
