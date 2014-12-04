@@ -38,6 +38,7 @@ The calabash command will rebuild your android or iOS binary every time.
 * On [Android](http://blog.lesspainful.com/2012/12/18/Android-Query/ )
  
 **Recording Touches**
+
 Recording of touches is currently not supported, for two reasons:
 * It does not work anymore with Calabash iOS on iOS 7+ 
 * Has never been implemented in Calabash Android
@@ -46,7 +47,7 @@ Recording of touches is currently not supported, for two reasons:
 The following slide deck may be of use: [TiCalabash: Fully automated Acceptance Testing @ TiConf EU 2014](http://www.slideshare.net/sophrinix/ticalabash-fully-automated-testing-ticonf-eu-2014)
 
 ## Jenkins configuration
-If you want to integrati TiCalabash in Jenkins, use the following configuration:
+If you want to integrate TiCalabash in Jenkins, use the following configuration:
 ```
 cd ~/Desktop/ticonf2014testappdemo/alloytest # or actually pull from git. 
 titanium clean titanium build --platform=iphone --test & 
