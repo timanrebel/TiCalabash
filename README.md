@@ -14,14 +14,37 @@ This includes to physical devices as well as Simulators/Emulators
 ## Getting Started
 Install the module with: `npm install -g ticalabash`
 
-Don't use `sudo`, because it is bad practise and will break the installation process. It's better to correctly set the permissions on the `/usr/local` directory instead, so you don't have to ever use `sudo` again when installing npm packages.
+Enter the password you normally enter for `sudo` when requested.
+
+Don't use `sudo npm install` yourself, because it is bad practise and will break the installation process. It's better to correctly set the permissions on the `/usr/local` directory instead, so you don't have to ever use `sudo` again when installing npm packages.
 
 ```
 sudo chown -R $USER /usr/local
 ```
 
-## Examples
-`ti calabash --platform=[android,ios] `
+## Example
+To test TiCalabash, create a default Alloy application and run:
+`ti calabash --platform=[android,ios]`
+
+Just press enter for now when asked which target to duplicate.
+
+After lots of compiling, you should see:
+```
+Feature: Home Screen
+  As an App Developer
+  I want to see an example feature work on a default alloy app
+  So that I can start using TiCalabash quickly
+
+  Scenario: See Home Screen                          # features/home_screen.feature:6
+    Given I am on the Home Screen                    # features/step_definitions/ticalabash_custom_steps.rb:1
+    Then I should see text containing "Hello, World" # calabash-cucumber-0.11.3/features/step_definitions/calabash_steps.rb:384
+    And take picture                                 # calabash-cucumber-0.11.3/features/step_definitions/calabash_steps.rb:229
+
+1 scenario (1 passed)
+3 steps (3 passed)
+```
+
+The picture/screenshot is found in the `build/iphone` or `build/android` folder and is named `screenshot_X.png`
 
 ## Documentation
 Because TiCalabash is wrapping [Calabash](http://calaba.sh), please use Calabash's documentation to learn how to use Calabash together with [Cucumber](http://cukes.info):
