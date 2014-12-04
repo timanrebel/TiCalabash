@@ -24,7 +24,7 @@ sudo chown -R $USER /usr/local
 `ti calabash --platform=[android,ios] `
 
 ## Documentation
-Because TiCalabash is wrapping [Calabash](http://calaba.sh), please to Calabash's documentation to learn how to use Calabash together with [Cucumber](http://cukes.info):
+Because TiCalabash is wrapping [Calabash](http://calaba.sh), please use Calabash's documentation to learn how to use Calabash together with [Cucumber](http://cukes.info):
 * [Calabash iOS documentation](https://github.com/calabash/calabash-ios/wiki/00-Calabash-iOS-documentation)
 * [Calabash Android documentation](https://github.com/calabash/calabash-android/blob/master/README.md)
 
