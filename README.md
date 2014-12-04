@@ -57,7 +57,7 @@ Because TiCalabash is wrapping [Calabash](http://calaba.sh), please use Calabash
 (The iOS documentation is far superior to the Android documentation and is mostly valid for Android as well). 
 
 If you don't have a features directory at the project root level, it will be created.
-The `calabash` command will rebuild your android or iOS binary every time.
+The `ti calabash` command will rebuild your Android or iOS app every time.
 
 **Querying your UI**
 * On [iOS](https://github.com/calabash/calabash-ios/wiki/05-Query-syntax)
